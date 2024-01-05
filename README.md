@@ -1,3 +1,5 @@
+[![](https://poggit.pmmp.io/shield.state/Anvils)](https://poggit.pmmp.io/p/Anvils)
+
 # Anvils
 A PocketMine-MP plugin that allows you to use the Anvil.
 
