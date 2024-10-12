@@ -74,7 +74,7 @@ class Main extends PluginBase implements Listener{
                     foreach($pk->getRequests() as $request)
                         foreach ($request->getActions() as $action)
                             if ($action instanceof PlaceStackRequestAction)
-                                if ($action->getSource()->getContainerId() === ContainerUIIds::CREATED_OUTPUT) //Picking up the object (Result)
+                                if ($action->getSource()->getContainerName()->getContainerId() === ContainerUIIds::CREATED_OUTPUT) //Picking up the object (Result)
                                     if(!AnvilManager::processResult($player, $inv, $request->getFilterStrings()))
                                         $event->cancel();
             }
